@@ -23,7 +23,7 @@ const ProjectHeroContainer = styled("div")`
     }
 `
 
-const ProjectTitle = styled("div") `
+const ProjectTitle = styled("div")`
     max-width: 550px;
     margin: 0 auto;
     text-align: center;
@@ -117,7 +117,7 @@ export default ({ data }) => {
     const projectContent = data.prismic.allProjects.edges[0].node;
     const meta = data.site.siteMetadata;
     return (
-        <Project project={projectContent} meta={meta}/>
+        <Project project={projectContent} meta={meta} />
     )
 }
 

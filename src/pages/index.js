@@ -138,7 +138,7 @@ const RenderBody = ({ home, projects, meta }) => (
                 {RichText.render(home.hero_title)}
             </>
             <a href={home.hero_button_link.url}
-               target="_blank" rel="noopener noreferrer">
+                target="_blank" rel="noopener noreferrer">
                 <Button>
                     {RichText.render(home.hero_button_text)}
                 </Button>
@@ -179,7 +179,7 @@ export default ({ data }) => {
 
     return (
         <Layout>
-            <RenderBody home={doc.node} projects={projects} meta={meta}/>
+            <RenderBody home={doc.node} projects={projects} meta={meta} />
         </Layout>
     )
 }
